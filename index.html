@@ -3,37 +3,126 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Abhay's Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Abhay Ogale | Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      background-color: #222;
+      color: white;
+      padding: 40px 20px;
+    }
+    header img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+    section {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 10px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    form textarea, form input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+    form button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .qa {
+      margin-top: 20px;
+      background: #eee;
+      padding: 15px;
+      border-radius: 8px;
+    }
+    .qa p {
+      margin: 10px 0;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Hi, I'm Abhay</h1>
+    <img src="profile.jpg" alt="Abhay Ogale">
+    <h1>Hi, I'm Abhay Ogale</h1>
     <p>Photographer | AI Content Creator | Freelancer</p>
   </header>
 
-  <section id="portfolio">
-    <h2>My Work</h2>
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I specialize in street and candid photography, capturing raw and powerful visual stories from real life. I also work as an AI content creator and offer freelance services like editing, dashboard creation, and photo processing.
+    </p>
+  </section>
+
+  <section>
+    <h2>My Photography</h2>
     <div class="gallery">
-      <img src="your-photo1.jpg" alt="Photo 1">
-      <img src="your-photo2.jpg" alt="Photo 2">
-      <!-- Add more -->
+      <img src="street1.jpg" alt="Street Photography 1">
+      <img src="candid1.jpg" alt="Candid Photography 2">
     </div>
   </section>
 
-  <section id="services">
-    <h2>Services I Offer</h2>
-    <ul>
-      <li>📷 Stock Photography</li>
-      <li>🎞️ Reels / Shorts Editing</li>
-      <li>📊 Data Dashboards & Cleaning</li>
-    </ul>
-  </section>
-
-  <section id="contact">
+  <section>
     <h2>Contact Me</h2>
     <p>Email: abhay@gmail.com</p>
-    <p>Instagram: @yourhandle</p>
+    <p>Instagram: <a href="https://instagram.com/yourhandle" target="_blank">@yourhandle</a></p>
+    <form action="#">
+      <label for="message">Send me an enquiry or message:</label><br>
+      <textarea id="message" rows="4" placeholder="Type your message here..."></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Feedback</h2>
+    <form action="#">
+      <input type="text" placeholder="Your Name">
+      <textarea rows="4" placeholder="Your feedback here..."></textarea>
+      <button type="submit">Send Feedback</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Q & A</h2>
+    <div class="qa">
+      <p><strong>Q:</strong> Do you offer photo editing services?</p>
+      <p><strong>A:</strong> Yes! I provide editing for reels, portraits, and candid shots using Adobe tools.</p>
+
+      <p><strong>Q:</strong> Can I hire you for a street shoot?</p>
+      <p><strong>A:</strong> Absolutely! Just drop me an email or Instagram DM and we’ll talk.</p>
+    </div>
   </section>
 </body>
 </html>
